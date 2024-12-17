@@ -8,5 +8,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metsarnele/todo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/metsarnele/todo/issues"
+  },
+  "homepage": "https://github.com/metsarnele/todo#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "mariadb": "^3.4.0"
+  }
 }

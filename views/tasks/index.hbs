@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Todo List</h1>
+    
+    {{#if error}}
+        <div class="alert alert-danger">{{error}}</div>
+    {{/if}}
+
+    <form action="/tasks" method="POST" class="mb-4">
+        <div class="input-group">
+            <input 
+                type="text" 
+                name="title" 
+                class="form-control" 
+                placeholder="Enter new task..."
+                required
+            >
+            <button type="submit" class="btn btn-primary">Add Task</button>
+        </div>
+    </form>
+
+    <div class="task-list">
+        {{#if tasks.length}}
+            {{#each tasks}}
+                <div class="task-item">
+                    <span>{{this.title}}</span>
+                </div>
+            {{/each}}
+        {{else}}
+            <p>No tasks yet. Add your first task!</p>
+        {{/if}}
+    </div>
+</div> 
